@@ -1,0 +1,91 @@
+/**
+ * screen.css
+ */
+
+/* DEBUGGING 
+div.row, div[class^="col-"]{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid green;
+}
+div[class^="col-"]{ border: 1px solid red } 
+
+input{ border: 1px solid blue !important; }
+td, th{ border: 1px solid fuchsia !important; }
+ul { border: 1px solid green !important; }
+li { border: 1px dashed green !important; }
+
+*/
+
+
+:root { 
+     /*--background-color: hsl(205.7, 9%, 15%);*/
+     --background-color: hsl(0, 0%, 100%);
+     --font-color: hsl(205.7, 9%, 95%);
+
+     --primary-color: hsl(43.9, 97.2%, 57.8%);
+
+     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+}
+
+body,html{ height: 100%; }
+
+body{
+     font-family: var(--font-family);
+     font-size: 18px;
+     line-height: 24px;
+     background-color: #ffff00;
+}
+
+.bg-primary{ background-color: hsl(230, 100%, 60%) !important; }
+
+h1{ font-size: 1.8em; font-weight: 700}
+h2{ font-size: 1.5em; font-weight: 700}
+h3{ font-size: 1.2em; }
+h4{ font-size: 1.1em; }
+h5{ font-size: 1.0em; }
+h6{ font-size: 1.0em; }
+
+.lead{
+  font-size: 5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ff0;
+  background-color: #000;
+  padding: 10px 30px;
+  text-align: center
+}
+
+.display{
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  padding: 30px;
+}
+
+.display-in{ display: inherit; }
+
+.counter{
+  margin: auto;
+  background-color: #fff;
+  border: 13px solid #000;
+  text-align: center;
+  padding: 3rem;
+  display: block;
+  margin:0 auto;
+  width: 700px;
+  height: 250px;
+  font-size: 10rem;
+  font-family: var(--font-family-monospace)
+}
+
+.striped{
+background-image: linear-gradient(45deg, #ffff00 25%, #000000 25%, #000000 50%, #ffff00 50%, #ffff00 75%, #000000 75%, #000000 100%);
+background-size: 141.42px 141.42px;
+}
+
+.h-100px{ height: 100px; }
