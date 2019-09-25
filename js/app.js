@@ -12,7 +12,7 @@ $(document).ready(function () {
 });
 
 
-var rand = Math.floor(Math.random() * 120) + 30;
+//var rand = Math.floor(Math.random() * 120) + 30;
 
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
@@ -24,10 +24,10 @@ function setTime() {
   secondsLabel.innerHTML = pad(totalSeconds % 60);
   minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
 
-  if(totalSeconds == rand){
+  /*if(totalSeconds == rand){
      totalSeconds = -1;
      rand = Math.floor(Math.random() * 120) + 30;
-  }
+  }*/
 }
 
 function pad(val) {
