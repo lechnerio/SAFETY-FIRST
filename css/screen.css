@@ -37,7 +37,7 @@ body{
      font-family: var(--font-family);
      font-size: 18px;
      line-height: 24px;
-     background-color: #ffff00;
+     background-color: #ff0;
 }
 
 .bg-primary{ background-color: hsl(230, 100%, 60%) !important; }
@@ -84,8 +84,32 @@ h6{ font-size: 1.0em; }
 }
 
 .striped{
-background-image: linear-gradient(45deg, #ffff00 25%, #000000 25%, #000000 50%, #ffff00 50%, #ffff00 75%, #000000 75%, #000000 100%);
+background-image: linear-gradient(45deg, transparent 25%, #000000 25%, #000000 50%, transparent 50%, transparent 75%, #000000 75%, #000000 100%);
 background-size: 141.42px 141.42px;
 }
 
 .h-100px{ height: 40px; }
+
+body {
+    background-color: red;
+    animation: bg-transition 300s linear 0s forwards;
+}
+
+.lead{
+    color: white;
+  }
+
+
+@keyframes bg-transition {
+  0%{
+    background-color: #FF201A; 
+  }
+
+  50% {
+    background-color: #FFF41D;
+  }
+
+  100% {
+    background-color: #17EB35;
+  }
+}

@@ -24,7 +24,25 @@ function setTime() {
   secondsLabel.innerHTML = pad(totalSeconds % 60);
   minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
 
-  /*if(totalSeconds == rand){
+  /*if(totalSeconds > 5){
+     $('.lead').css('color', '#FFE309');
+     $('body').css('background-color', '#FFE309');
+
+     $('.lead').animate({backgroundColor: '#CD3333'}, 'slow');
+     $('.lead').animate({backgroundColor: '#CD3333'}, 'slow');
+
+  }*/
+/*
+  if(totalSeconds > 10){
+     $('.lead').css('color', '#95EB00');
+     $('body').css('background-color', '#95EB00');
+  }
+
+  if(totalSeconds > 15){
+     $('.lead').css('color', '#09E845');
+     $('body').css('background-color', '#09E845');
+  }
+  if(totalSeconds == rand){
      totalSeconds = -1;
      rand = Math.floor(Math.random() * 120) + 30;
   }*/
