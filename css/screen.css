@@ -92,7 +92,7 @@ background-size: 141.42px 141.42px;
 
 body {
     background-color: red;
-    animation: bg-transition 300s linear 0s forwards;
+    animation: bg-transition 900s linear 0s forwards;
 }
 
 .lead{
